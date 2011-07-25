@@ -25,7 +25,7 @@ end
 file "/var/tmp/ruby-uuid" do
   owner 'www'
   group 'www'
-  chmod '777'
+  mode '777'
 end
 
 # default options from Ubuntu 8.10
