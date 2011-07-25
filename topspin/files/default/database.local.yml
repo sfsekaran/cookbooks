@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  host: localhost
+  database: topspin_development
+  username: root
+  encoding: utf8
