@@ -23,7 +23,7 @@ cookbook_file '/vagrant/manager/config/database.local.yml'
 
 execute 'bundle exec rake db:create' do
   cwd '/vagrant/manager'
-  not_if 'mysql --batch --skip-column-names -e "SHOW DATABASES LIKE \'topspin_production\'" | grep topspin_production'
+  not_if 'mysql --batch --skip-column-names -e "SHOW DATABASES LIKE \'topspin_development\'" | grep topspin_development'
 end
 
 # run migrations
