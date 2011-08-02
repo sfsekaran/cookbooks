@@ -19,7 +19,9 @@ execute 'bundle install' do
 end
 
 # install a database.local.yml
-cookbook_file '/vagrant/manager/config/database.local.yml'
+cookbook_file '/vagrant/manager/config/database.local.yml' do
+  action :create_if_missing
+end
 
 execute 'bundle exec rake db:create' do
   cwd '/vagrant/manager'
