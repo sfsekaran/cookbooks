@@ -10,6 +10,7 @@ end
 # for memcache gem
 package 'libsasl2-2'
 package 'libsasl2-dev'
+package 'memcached'
 
 # install bundled gems
 gem_package 'bundler'

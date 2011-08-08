@@ -5,9 +5,12 @@ development:
   username: root
   encoding: utf8
 
-test:
+test: &test
   adapter: mysql
   host: localhost
   database: topspin_test
   username: root
   encoding: utf8
+
+cucumber:
+  << *test
